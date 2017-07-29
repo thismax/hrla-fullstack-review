@@ -1,0 +1,110 @@
+@font-face {
+  font-family: blockletter;
+  src: url('../assets/fonts/Blockletter.otf');
+}
+
+@font-face {
+  font-family: filmStrip;
+  src: url('../assets/fonts/ACFilmstrip.otf');
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: blockletter;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 95px;
+  font-family: filmStrip;
+  margin-bottom: 100px;
+}
+
+.addQuestion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.createText {
+  font-size: 40px;
+  color: red;
+}
+
+input {
+  font-family: blockletter;
+}
+
+.imageInput {
+  width: 60%;
+  margin: 15px;
+}
+
+.answerInput {
+  width: 50%;
+  margin: 10px;
+}
+
+.selectCorrect {
+  width: 35%;
+  margin: 15px;
+  font-family: blockletter;
+}
+
+.createButton {
+  font-family: blockletter;
+  font-size: 25px;
+  color: red;
+  cursor: pointer;
+  width: 200px;
+  height: 55px;
+  margin: 10px;
+}
+
+.questionList {
+  margin-bottom: 100px;
+}
+
+.questionEntry {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.filmFrame {
+  width: 80%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.answerButton {
+  font-family: blockletter;
+  font-size: 25px;
+  width: 80%;
+  height: 35px;
+  margin: 5px;
+}
+
+.right {
+  background-color: green;
+}
+
+.wrong {
+  background-color: red;
+}
+
+.score {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  font-size: 60px;
+}
