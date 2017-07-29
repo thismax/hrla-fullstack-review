@@ -6,8 +6,7 @@
   "scripts": {
     "start": "node sever/index.js",
     "dev": "nodemon server/index.js",
-    "compile": "webpack -w",
-    "seed": "node server/seeding/seed.js"
+    "compile": "webpack -w"
   },
   "dependencies": {
     "axios": "^0.16.2",
