@@ -1,8 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/App';
+// TODO import App component
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('app'),
-);
+// TODO render App component and attach to the DOM

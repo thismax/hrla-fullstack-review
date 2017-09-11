@@ -1,24 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import QuestionEntry from './QuestionEntry';
+// TODO import needed component
 
-const QuestionsList = props => (
-  <div className="questionList">
-    {props.questions.map(question => (
-      <QuestionEntry
-        key={question.id}
-        question={question}
-        incrementScore={props.incrementScore}
-      />
-    ))}
-  </div>
-);
+// TODO create stateless QuestionsList component
 
-QuestionsList.propTypes = {
-  questions: PropTypes.arrayOf(
-    PropTypes.object,
-  ).isRequired,
-  incrementScore: PropTypes.func.isRequired,
-};
-
-export default QuestionsList;
+  /* TODO jsx to render
+    <div className="questionList">
+      // TODO render multiple instance of QuestionEntry component
+    </div>
+  */

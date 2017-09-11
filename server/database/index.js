@@ -2,32 +2,11 @@ const Sequelize = require('sequelize');
 const db = require('./config');
 const seed = require('../seeding');
 
-const Question = db.define('Question', {
-  frame: {
-    type: Sequelize.STRING,
-    allowNull: false,
-  },
-  answer1: {
-    type: Sequelize.STRING,
-    allowNull: false,
-  },
-  answer2: {
-    type: Sequelize.STRING,
-    allowNull: false,
-  },
-  answer3: {
-    type: Sequelize.STRING,
-    allowNull: false,
-  },
-  correct: {
-    type: Sequelize.INTEGER,
-    allowNull: false,
-  },
-});
+// TODO create Question table
+  // frame = STRING
+  // answer1 = STRING
+  // answer2 = STRING
+  // answer3 = STRING
+  // correct = STRING
 
-Question.sync({ force: true })
-  .then(() => seed(Question));
-
-module.exports = {
-  Question,
-};
+// TODO sync and seed table

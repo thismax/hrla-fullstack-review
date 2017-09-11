@@ -1,8 +1,6 @@
 const router = require('express').Router();
-const controller = require('../controllers/questionsController');
+// TODO import controller for questions
 
-router.get('/fetch', controller.fetchQuestions);
+// TODO create route for get requests
 
-router.post('/create', controller.createQuestion);
-
-module.exports = router;
+// TODO create route for post requests

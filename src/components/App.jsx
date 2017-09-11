@@ -1,61 +1,23 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import '../../styles/styles.scss';
-import AddQuestion from './AddQuestion';
-import QuestionsList from './QuestionsList';
-import Score from './Score';
+// TODO import needed components
 
-class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      allQuestions: [],
-      score: 0,
-    };
-    this.getAllQuestions = this.getAllQuestions.bind(this);
-    this.addQuestion = this.addQuestion.bind(this);
-    this.incrementScore = this.incrementScore.bind(this);
-  }
+// TODO create statefull App component
+  // state: allQuestions = array
+  //        score = number
 
-  componentDidMount() {
-    this.getAllQuestions();
-  }
+  // TODO create method to get all questions from Db and store to state
 
-  getAllQuestions() {
-    axios.get('/api/questions/fetch')
-      .then(({ data }) => {
-        this.setState({ allQuestions: data });
-      })
-      .catch(err => console.log(err));
-  }
+  // TODO create method to add new question to state
 
-  addQuestion(question) {
-    this.state.allQuestions.push(question);
-    this.setState({ allQuestions: this.state.allQuestions });
-  }
+  // TOD create method to increment score
 
-  incrementScore() {
-    this.setState({ score: this.state.score + 1 });
-  }
-
-  render() {
-    return (
-      <div className="main">
-        <div className="title">MOVIE WIZ QUIZ</div>
-        <AddQuestion
-          addQuestion={this.addQuestion}
-        />
-        <QuestionsList
-          questions={this.state.allQuestions}
-          incrementScore={this.incrementScore}
-        />
-        <Score
-          score={this.state.score}
-          totalQuestions={this.state.allQuestions.length}
-        />
-      </div>
-    );
-  }
-}
-
-export default App;
+  /* TODO jsx to render
+    <div className="main">
+      <div className="title">MOVIE WIZ QUIZ</div>
+      // TODO render AddQuestion component
+      // TODO render Question list component
+      // TODO render SCore component
+    </div>
+  */

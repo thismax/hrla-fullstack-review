@@ -4,27 +4,20 @@ const parser = require('body-parser');
 const logger = require('morgan');
 const path = require('path');
 
-const app = express();
+// TODO initialize express app
 
-// init router
-const router = require('./router');
+// TODO initialize router
 
-// init Database
-require('./database/config');
+// TODO initialize Database
 
-// init database's tables and seed
-require('./database');
+// TODO initialize database's tables and seed data
 
-app.use(parser.json());
-app.use(parser.urlencoded({ extended: true }));
-app.use(logger('dev'));
+// TODO use 'parser' and 'logger' as middleware
 
-app.use(express.static(path.join(__dirname, '../static')));
+// TODO serve static files
 
-app.use('/api', router);
+// TODO use middleware to '/api' in front of all routes
 
 const port = process.env.PORT || 3000;
 
-app.listen(port, () => {
-  console.log(`node listening on port ${port}`);
-});
+// TODO start listening with server
