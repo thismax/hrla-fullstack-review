@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize');
 const db = require('./config');
-const seed = require('../seeding/seed');
+const seed = require('../seeding');
 
 const Question = db.define('Question', {
   frame: {

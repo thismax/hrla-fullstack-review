@@ -10,6 +10,7 @@ class QuestionEntry extends Component {
       answer2: '',
       answer3: '',
     };
+    this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick(number, answer) {

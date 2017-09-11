@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node sever/index.js",
     "dev": "nodemon server/index.js",
-    "compile": "webpack -w"
+    "compile": "webpack --progress -w"
   },
   "dependencies": {
     "axios": "^0.16.2",

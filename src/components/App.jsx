@@ -12,6 +12,7 @@ class App extends Component {
       allQuestions: [],
       score: 0,
     };
+    this.getAllQuestions = this.getAllQuestions.bind(this);
     this.addQuestion = this.addQuestion.bind(this);
     this.incrementScore = this.incrementScore.bind(this);
   }

@@ -1,6 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const parser = require('body-parser');
+const logger = require('morgan');
 const path = require('path');
 
 const app = express();
@@ -14,9 +15,9 @@ require('./database/config');
 // init database's tables and seed
 require('./database');
 
-
 app.use(parser.json());
 app.use(parser.urlencoded({ extended: true }));
+app.use(logger('dev'));
 
 app.use(express.static(path.join(__dirname, '../static')));
 
